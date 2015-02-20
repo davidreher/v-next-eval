@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNet.Mvc;
+using MyLib;
 
 namespace VNextEval.Controllers
 {
@@ -14,8 +12,7 @@ namespace VNextEval.Controllers
 
         public IActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = CoreStrings.Title;
             return View();
         }
 
